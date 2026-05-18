@@ -1,0 +1,30 @@
+.img-style:hover {
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.navbar-nav a {
+    color: rgb(19, 17, 17);
+    font-weight: 35px;
+}
+
+.navbar ul li:hover {
+    background: rgb(87, 238, 238);
+    transform: scale(1.1);
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.navbar ul li a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.card-style:hover {
+    transform: scale(1.1);
+    transition: 2s;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.list-unstyled li a{
+    text-decoration: none;
+}
