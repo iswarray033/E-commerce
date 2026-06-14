@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>E-comerce Web-page</title>
+    <title>Products-page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -14,6 +14,7 @@
 
 <body>
     <header>
+
         <!--Topbar -->
         <ul class="nav justify-content-center py-2">
             <li class="nav-item"><a href="#" class="nav-link text-dark">My Account |</a></li>
@@ -56,10 +57,17 @@
 
 
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                        <a href="cart.html" class="text-dark"><i class="bi bi-cart ms-3 fs-2"></i></a>
+                    <form class="d-flex align-items-center" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+
+                            <a href="#" class="text-dark position-relative ms-3"><i class="bi bi-cart fs-2"></i>
+
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    3
+                                </span>
+                            </a>
                     </form>
                 </div>
             </div>
@@ -80,66 +88,31 @@
     <section class="container">
         <div class="row">
             <div class="col-md-3">
-                <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                <h4 class="fw-bold mb-3">Categories</h4>
+
+                <div class="accordion accordion-flush" id="categoryAccordion">
+
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
-                                A
+                            <button class="accordion-button collapsed" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#electronics">
+                                Electronics
                             </button>
                         </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <ul class="list-group">
-                                    <li class="list-group-item">item1</li>
-                                    <li class="list-group-item">item2</li>
-                                    <li class="list-group-item">item3</li>
-                                    <li class="list-group-item">item4</li>
-                                    <li class="list-group-item">item5</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseTwo">
-                                B
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <ul class="list-group">
-                                    <li class="list-group-item">item1</li>
-                                    <li class="list-group-item">item2</li>
-                                    <li class="list-group-item">item3</li>
-                                    <li class="list-group-item">item4</li>
-                                    <li class="list-group-item">item5</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                aria-controls="flush-collapseThree">
-                                C
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <ul class="list-group">
-                                    <li class="list-group-item">item1</li>
-                                    <li class="list-group-item">item2</li>
-                                    <li class="list-group-item">item3</li>
-                                    <li class="list-group-item">item4</li>
-                                    <li class="list-group-item">item5</li>
+
+                        <div id="electronics"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#categoryAccordion">
+
+                            <div class="accordion-body p-0">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Mobile</li>
+                                    <li class="list-group-item">Laptop</li>
+                                    <li class="list-group-item">Tablet</li>
+                                    <li class="list-group-item">Smart Watch</li>
+                                    <li class="list-group-item">Headphone</li>
                                 </ul>
                             </div>
                         </div>
@@ -147,21 +120,74 @@
 
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseFour" aria-expanded="false"
-                                aria-controls="flush-collapseFour">
-                                D
+                            <button class="accordion-button collapsed" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#fashion">
+                                Fashion
                             </button>
                         </h2>
-                        <div id="flush-collapseFour" class="accordion-collapse collapse"
-                            data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <ul class="list-group">
-                                    <li class="list-group-item">item1</li>
-                                    <li class="list-group-item">item2</li>
-                                    <li class="list-group-item">item3</li>
-                                    <li class="list-group-item">item4</li>
-                                    <li class="list-group-item">item5</li>
+
+                        <div id="fashion"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#categoryAccordion">
+
+                            <div class="accordion-body p-0">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Men's Clothing</li>
+                                    <li class="list-group-item">Women's Clothing</li>
+                                    <li class="list-group-item">Shoes</li>
+                                    <li class="list-group-item">Bags</li>
+                                    <li class="list-group-item">Accessories</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#home">
+                                Home & Living
+                            </button>
+                        </h2>
+
+                        <div id="home"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#categoryAccordion">
+
+                            <div class="accordion-body p-0">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Furniture</li>
+                                    <li class="list-group-item">Kitchen</li>
+                                    <li class="list-group-item">Lighting</li>
+                                    <li class="list-group-item">Decoration</li>
+                                    <li class="list-group-item">Storage</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#beauty">
+                                Beauty & Care
+                            </button>
+                        </h2>
+
+                        <div id="beauty"
+                            class="accordion-collapse collapse"
+                            data-bs-parent="#categoryAccordion">
+
+                            <div class="accordion-body p-0">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">Skin Care</li>
+                                    <li class="list-group-item">Hair Care</li>
+                                    <li class="list-group-item">Makeup</li>
+                                    <li class="list-group-item">Perfume</li>
+                                    <li class="list-group-item">Personal Care</li>
                                 </ul>
                             </div>
                         </div>
@@ -171,61 +197,83 @@
 
 
             </div>
-            <div class="col-md-9">
+
+
+              <div class="col-md-9">
                 <!--New Product-->
-                <section class="container">
-                    <div class="row mt-3">
-                        <h2 class="text-center mb-3">New Products </h3>
-                            <div class="col-md-3">
+        <div class="row mt-3">
 
-                                <div class=" card-style text-center h-100 p-2">
-                                    <img class="rounded" src="Assets/images/product2.jpg" alt="Product">
-                                    <h4>Product1</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, eius nemo?
-                                        Assumenda
-                                        ipsa quos molestias?</p>
-                                    <button class="btn btn-primary">Add to cart</button>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
+             <h2 class="text-center mb-4">New Products</h2>
 
-                                <div class=" card-style text-center h-100 p-2">
-                                    <img class="rounded" src="Assets/images/product3.jpg" alt="Product">
-                                    <h4>Product2</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, eius nemo?
-                                        Assumenda
-                                        ipsa quos molestias?</p>
-                                    <button class="btn btn-primary">Add to cart</button>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-
-                                <div class=" card-style text-center h-100 p-2">
-                                    <img class="rounded" src="Assets/images/product4.jpg" alt="Product">
-                                    <h4>Product3</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, eius nemo?
-                                        Assumenda
-                                        ipsa quos molestias?</p>
-                                    <button class="btn btn-primary">Add to cart</button>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-
-                                <div class=" card-style text-center h-100 p-2">
-                                    <img class="rounded" src="Assets/images/product5.jpg" alt="Product">
-                                    <h4>Product4</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, eius nemo?
-                                        Assumenda
-                                        ipsa quos molestias?</p>
-                                    <button class="btn btn-primary">Add to cart</button>
-                                </div>
-                            </div>
-
-
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="card-style text-center h-100 p-2">
+                        <img class="img-fluid rounded" src="Assets/images/product2.jpg" alt="Product">
+                        <h4 class="mt-2">Product 1</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn btn-primary">Add to Cart</button>
                     </div>
-                </section>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="card-style text-center h-100 p-2">
+                        <img class="img-fluid rounded" src="Assets/images/product3.jpg" alt="Product">
+                        <h4 class="mt-2">Product 2</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="card-style text-center h-100 p-2">
+                        <img class="img-fluid rounded" src="Assets/images/product4.jpg" alt="Product">
+                        <h4 class="mt-2">Product 3</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="card-style text-center h-100 p-2">
+                        <img class="img-fluid rounded" src="Assets/images/product5.jpg" alt="Product">
+                        <h4 class="mt-2">Product 4</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+
+     </div>
+
+        <!-- Pagination -->
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center mt-4">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#">Previous</a>
+                        </li>
+
+                        <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
+        </div>
+
+          
 
     </section>
 
@@ -236,16 +284,14 @@
 
 
 
-    <footer class="text-center bg-dark text-white p-4">
+    <footer class="text-center bg-dark text-white py-4">
         &copy;-2026 all reserved E-comerce shop
         <p id="time"></p>
 
     </footer>
     <script src="Assets/js/script.js"></script>
     <script src="Assets/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
